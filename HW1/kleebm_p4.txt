@@ -1,0 +1,8 @@
+Object o = "abc";    //Will create an object of Type object containing "abc"
+boolean b = o.equals("a, b, c");   //Will create an object of type boolean which is eqaul to False
+char c = o.charAt(1); //Compile time: Object has no method called charAt
+Object o2 = b;        //Creates an object of type Object set equal to b which is false
+String s = o;         //Compile-time:Doesnt work since object cant be a string
+String t = (String) o; //Creates a String that typecasts the object, meaning the string contains "abc"
+c = t.charAt(1);      //Would work if the original definition of c is not given, would be equal to b
+c = t.charAt(3);      //Run time: IndexOutOfBounds Exception 3 is outside of the max index of t, which is 2

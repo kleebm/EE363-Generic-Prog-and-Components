@@ -1,0 +1,1 @@
+All you need to do is javac UtilMEthodGenerics and TEstExchange2 together then java TestExchange to get the output

@@ -1,0 +1,3 @@
+rm -f *class
+javac -cp /usr/shar/java/junit.jar *java
+java -cp .:/usr/shar/java/junit.jar org.junit.runner.JUnitCore RationalTest
